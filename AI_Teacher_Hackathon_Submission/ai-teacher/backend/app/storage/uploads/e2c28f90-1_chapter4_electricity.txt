@@ -1,0 +1,45 @@
+Chapter 4: Electricity
+
+Section 4.1: Electric Current
+Electric current is the rate of flow of electric charge through a conductor. It is measured
+in amperes (A). Current flows from the positive terminal of a source to the negative terminal
+through an external circuit, conventionally, even though electrons physically move the
+opposite way. A simple analogy: current is like water flowing through a pipe, where the
+amount of water passing a point per second is like the current.
+
+Section 4.2: Voltage
+Voltage, or potential difference, is the "push" that drives current through a circuit. It is
+measured in volts (V). Using the water analogy, voltage is like the water pressure — higher
+pressure pushes more water through the pipe for a given pipe width.
+
+Section 4.3: Resistance
+Resistance opposes the flow of current in a conductor and is measured in ohms (Ω). Thin wires,
+long wires, and certain materials (like nichrome) have higher resistance than thick, short,
+highly conductive wires (like copper). In the water analogy, resistance is like a narrow or
+rough section of pipe that slows the water down.
+
+Section 4.4: Ohm's Law
+Ohm's Law states that the current through a conductor is directly proportional to the voltage
+across it and inversely proportional to its resistance: I = V / R. This means that if
+resistance increases while voltage stays constant, current must decrease — not increase, a
+common misconception among beginners who assume "more resistance means more current pushing
+through harder."
+
+Section 4.5: Series and Parallel Circuits
+In a series circuit, components are connected end-to-end so the same current flows through
+all of them, and the total resistance is the sum of each component's resistance. In a parallel
+circuit, components are connected across the same two points, so the voltage across each is
+the same, and adding more parallel branches decreases the overall resistance of the circuit.
+
+Chapter 5: Magnetism
+
+Section 5.1: Magnetic Fields
+A magnetic field is produced around any current-carrying conductor. The strength and direction
+of this field can be found using the right-hand rule: if you point your right thumb in the
+direction of conventional current flow, your curled fingers show the direction of the magnetic
+field around the wire.
+
+Section 5.2: Electromagnets
+Wrapping a current-carrying wire into a coil around an iron core concentrates the magnetic
+field and creates an electromagnet, whose strength increases with more coil turns and higher
+current.

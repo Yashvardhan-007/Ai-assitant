@@ -1,0 +1,30 @@
+{
+  "student_demo": {
+    "student_id": "student_demo",
+    "topics_studied": [
+      "Ohm's Law"
+    ],
+    "history": [
+      {
+        "topic": "Ohm's Law",
+        "timestamp": "2026-09-05T11:45:49.041037+00:00",
+        "score_percent": 0,
+        "weak_areas": [
+          "Part 1: Key idea from the material",
+          "Part 2: Key idea from the material",
+          "Part 3: Key idea from the material",
+          "Part 4: Key idea from the material"
+        ],
+        "strong_areas": []
+      }
+    ],
+    "strong_concepts": [],
+    "weak_concepts": [
+      "Part 1: Key idea from the material",
+      "Part 2: Key idea from the material",
+      "Part 3: Key idea from the material",
+      "Part 4: Key idea from the material"
+    ],
+    "current_learning_path": null
+  }
+}

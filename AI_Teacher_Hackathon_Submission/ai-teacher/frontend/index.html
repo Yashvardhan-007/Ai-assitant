@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI Teacher — Human-Like AI Educator</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="topbar">
+  <h1>🎓 AI Teacher</h1>
+  <p class="tag">Build → Plan → Teach → Question → Evaluate → Adapt</p>
+  <div class="apistatus" id="apiStatus">Checking backend…</div>
+</header>
+
+<main class="wrap">
+
+  <!-- STEP 1: Material / Topic -->
+  <section class="card">
+    <h2>1. What should I teach?</h2>
+    <div class="row">
+      <div class="col">
+        <label>Upload learning material (PDF / DOCX / PPTX / TXT)</label>
+        <input type="file" id="fileInput" accept=".pdf,.docx,.pptx,.txt,.md" />
+        <button id="uploadBtn">Upload &amp; Index</button>
+        <div id="uploadResult" class="hint"></div>
+      </div>
+      <div class="col">
+        <label>Or just tell me a topic / chapter</label>
+        <input type="text" id="topicInput" placeholder="e.g. Chapter 4, or 'Newton's Laws of Motion'" />
+      </div>
+    </div>
+  </section>
+
+  <!-- STEP 2: Preferences -->
+  <section class="card">
+    <h2>2. Personalize the lesson</h2>
+    <div class="row wrap4">
+      <div class="col">
+        <label>Learner level</label>
+        <select id="level">
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+        </select>
+      </div>
+      <div class="col">
+        <label>Time available (minutes)</label>
+        <select id="minutes">
+          <option value="5">5 — quick overview</option>
+          <option value="20" selected>20 — structured lesson</option>
+          <option value="60">60 — deep lesson</option>
+        </select>
+      </div>
+      <div class="col">
+        <label>Teaching language</label>
+        <select id="language">
+          <option>English</option>
+          <option>Hindi</option>
+          <option>Hinglish</option>
+          <option>Tamil</option>
+          <option>Telugu</option>
+          <option>Bengali</option>
+          <option>Marathi</option>
+          <option>Spanish</option>
+          <option>French</option>
+        </select>
+      </div>
+      <div class="col">
+        <label>Student ID (for progress tracking)</label>
+        <input type="text" id="studentId" placeholder="e.g. student_01" value="student_demo" />
+      </div>
+    </div>
+    <button id="planBtn" class="primary">📋 Generate Lesson Plan</button>
+  </section>
+
+  <!-- STEP 3: Lesson plan + video -->
+  <section class="card" id="planSection" style="display:none">
+    <h2>3. Lesson plan</h2>
+    <div id="planMeta" class="hint"></div>
+    <div id="planSegments"></div>
+    <button id="videoBtn" class="primary">🎬 Generate AI Teaching Video</button>
+    <div id="videoStatus" class="hint"></div>
+    <video id="lessonVideo" controls style="display:none;width:100%;max-width:960px;margin-top:14px;border-radius:10px;"></video>
+  </section>
+
+  <!-- STEP 4: Quiz -->
+  <section class="card" id="quizSection" style="display:none">
+    <h2>4. Check your understanding</h2>
+    <button id="quizBtn" class="primary">📝 Start Assessment</button>
+    <div id="quizArea"></div>
+    <button id="reportBtn" class="primary" style="display:none">📊 Get Learning Report</button>
+    <div id="reportArea"></div>
+  </section>
+
+  <!-- STEP 5: Profile -->
+  <section class="card" id="profileSection">
+    <h2>5. Learning profile</h2>
+    <button id="profileBtn">🔄 Refresh Profile</button>
+    <div id="profileArea" class="hint"></div>
+  </section>
+
+</main>
+
+<footer>
+  <p>AI Innovation Hackathon 2026 — AI Teacher prototype. See <code>docs/README.md</code> for architecture,
+  limitations, and how to plug in a real LLM / avatar API.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
